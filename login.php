@@ -23,11 +23,11 @@
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
-                            <a href="login.php" class="button">
+                            <a href="login.php" class="button is-success">
                                 <span class="icon"><i class="fas fa-user"></i></span>
                                 <span>Login</span>
                             </a>
-                            <a href="register.php" class="button">
+                            <a href="register.php" class="button is-primary">
                                 <span class="icon"><i class="fas fa-list"></i></i></span>
                                 <span>Register</span>
                             </a>

@@ -11,7 +11,7 @@
 <nav class="navbar is-light">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item" href="index.html">
+                <a class="navbar-item" href="login.html">
                     <span class="icon is-large">
                 <i class="fas fa-home"></i>
               </span>
@@ -30,7 +30,7 @@
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
-                            <a href="login.php" class="button">
+                            <a href="login.php" class="button is-success">
                                 <span class="icon"><i class="fas fa-user"></i></span>
                                 <span>Login</span>
                             </a>
@@ -45,5 +45,5 @@
     First Name:<input class="input is-normal" type="text" name="firstName" placeholder="John" /><br />
     Last Name:<input class="input is-normal" type="text" name="lastName" placeholder="Doe" /><br />
     Password:<input class="input is-normal" type="password" name="password" placeholder="*****" /><br /><br />
-    <input class="button" type="submit" value="Create User" />
+    <input class="button is-info" type="submit" value="Create User" />
 </form>

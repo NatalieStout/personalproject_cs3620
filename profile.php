@@ -34,11 +34,11 @@ if(!isset($_SESSION['loggedin'])){
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
-                        <a href="movie_insert_form.php" class="button">
+                        <a href="movie_insert_form.php" class="button is-success">
                                 <span class="icon"><i class="fas fa-user"></i></span>
                                 <span>Add New Show</span>
                             </a>
-                            <a href="login.php" class="button">
+                            <a href="login.php" class="button is-danger">
                                 <span class="icon"><i class="fas fa-user"></i></span>
                                 <span>Logout</span>
                             </a>
@@ -75,7 +75,7 @@ if(!isset($_SESSION['loggedin'])){
                     <div class="content">' . $shows[$x]->getTvshowCreator() . '</div>
                     <div class="content">' . $shows[$x]->getTvshowDate() . '</div>
                     
-                    <button onClick="window.location.href=\'edit.php?id=' . $shows[$x]->getTvshowId() . '\'" class="button">Edit
+                    <button onClick="window.location.href=\'edit.php?id=' . $shows[$x]->getTvshowId() . '\'" class="button is-info">Edit
                 </div>
             </div>';
     }
