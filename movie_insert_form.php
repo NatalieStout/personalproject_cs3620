@@ -45,3 +45,13 @@
     Release Date:<input class="input is-normal" type="text" name="releasedate" placeholder="01-01-2021" /><br />
     <input class="button is-info" type="submit" value="Add New Show" />
 </form>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-left">
+      <p><i class="far fa-copyright"></i>
+        Footer
+      </p>
+    </div>
+  </div>
+</footer>

@@ -47,3 +47,13 @@
     Password:<input class="input is-normal" type="password" name="password" placeholder="*****" /><br /><br />
     <input class="button is-info" type="submit" value="Create User" />
 </form>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-left">
+      <p><i class="far fa-copyright"></i>
+        Footer
+      </p>
+    </div>
+  </div>
+</footer>
