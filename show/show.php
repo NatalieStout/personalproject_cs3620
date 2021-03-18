@@ -39,10 +39,15 @@
           $this->releasedate = $releasedate;
         }
 
-        public function getMyTvshows() {
+        public function getMyTvshows($user_id) {
             $showDAO = new showDAO();
-            return $showDAO->getAllTvshows();
+            return $showDAO->getShowsByUserId($user_id);
         }
+
+        public function deleteShow($user_id, $id) {
+          $showDAO = new showDAO();
+          return $showDAO->deleteShow($user_id, $id);
+      }
 
         public function getTvshow($input) {
           $showDAO = new showDAO();

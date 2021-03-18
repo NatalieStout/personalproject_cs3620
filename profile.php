@@ -64,7 +64,7 @@ if(!isset($_SESSION['loggedin'])){
     require_once('./show/show.php');
 
     $show = new show();
-    $shows = $show->getMyTvshows();
+    $shows = $show->getMyTvshows($_SESSION["user_id"]);
 
     $arrlength = count($shows);
 
@@ -76,6 +76,7 @@ if(!isset($_SESSION['loggedin'])){
                     <div class="content">' . $shows[$x]->getTvshowDate() . '</div>
                     
                     <button onClick="window.location.href=\'edit.php?id=' . $shows[$x]->getTvshowId() . '\'" class="button is-info">Edit
+                    <button onClick="window.location.href=\'delete.php?id=' . $shows[$x]->getTvshowId() . '\'" class="button is-danger">Delete
                 </div>
             </div>';
     }
