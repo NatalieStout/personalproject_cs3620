@@ -42,12 +42,7 @@
 require './utilities/connection.php';
 require 'setenv.php';
 
-
-
-if(!isset($_SESSION['loggedin'])){
-    header('Location: login.php');
-    exit;
-} ?>
+ ?>
 
 <?php
     ini_set('display_errors', 1);

@@ -74,9 +74,8 @@ if(!isset($_SESSION['loggedin'])){
                 <header class="content">' . $shows[$x]->getTvshowTitle() . '</header>
                     <div class="content">' . $shows[$x]->getTvshowCreator() . '</div>
                     <div class="content">' . $shows[$x]->getTvshowDate() . '</div>
-                    
-                    <div><button onClick="window.location.href=\'edit.php?id=' . $shows[$x]->getTvshowId() . '\'" class="button is-info">Edit</div>
-                    <div><button onClick="window.location.href=\'discard.php?id=' . $shows[$x]->getTvshowId() . '\'" class="button is-danger">Delete</div>
+                    <button onClick="window.location.href=\'edit.php?id=' . $shows[$x]->getTvshowId() . '\'" class="button is-info">Edit
+                    <button onClick="window.location.href=\'discard.php?id=' . $shows[$x]->getTvshowId() . '\'" class="button is-danger">Delete
                 </div>
             </div>';
     }
