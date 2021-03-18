@@ -1,5 +1,4 @@
 <?php
-echo $_GET["id"];
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -10,4 +9,6 @@ require_once('./show/show.php');
 
 $show = new show();
 $shows = $show->deleteShow($_SESSION["user_id"], $_GET["id"]);
+
+header('Location: profile.php');
 ?>
