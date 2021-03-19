@@ -29,7 +29,7 @@
 
 <?php
 
-    session_start();
+
     
     require 'setenv.php';
     require './utilities/connection.php';
