@@ -20,5 +20,4 @@ $stmt = $con->prepare("INSERT INTO cs3620_project1.tvshows (`title`,
     $stmt->close();
     $con->close();
 
-    header('Location: profile.php');
 ?>
