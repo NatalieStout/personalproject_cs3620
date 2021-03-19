@@ -29,7 +29,7 @@
 
 <?php
 
-    session_start();
+    
 
     require 'setenv.php';
     require './utilities/connection.php';
@@ -37,6 +37,8 @@
 $stmt = $con->prepare("INSERT INTO cs3620_project1.tvshows (`title`,
     `writerproducer`,
     `releasedate`, `user_id`) VALUES (?, ?, ?,?)");
+
+    session_start();
 
     $tt = $_POST["title"];
     $fln = $_POST["writerproducer"];
