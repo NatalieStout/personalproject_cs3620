@@ -90,6 +90,8 @@ class ShowDAO {
         return $shows;
     }
 
+
+
     function deleteShow($uid, $sid){
         require('./utilities/connection.php');
         $sql = "DELETE FROM cs3620_project1.tvshows WHERE user_id = " . $uid . " AND id = " . $sid . ";";

@@ -4,7 +4,7 @@
 <nav class="navbar is-light">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item" href="login.html">
+                <a class="navbar-item" href="login.php">
                     <span class="icon is-large">
                 <i class="fas fa-home"></i>
               </span>

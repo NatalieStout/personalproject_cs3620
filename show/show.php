@@ -53,6 +53,11 @@
           $showDAO = new showDAO();
           return $showDAO->getTvshow($input);
       }
+
+      //   public function insertTvshow($user_id){
+      //     $showDAO = new showDAO();
+      //     $showDAO->insertTvshow($this, $user_id);
+      // }
       
         public function jsonSerialize(){
             $vars = get_object_vars($this);
