@@ -32,5 +32,5 @@ jobs:
       with:
         app-name: 'natalies-cs3620'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_d49e2c339dd248458e1aed3116284d13 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_6ea78c7f5ab14763871ac7701029f62d }}
         package: ${{env.DOTNET_ROOT}}/myapp 
