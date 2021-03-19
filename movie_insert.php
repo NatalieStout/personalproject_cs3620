@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
      <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
@@ -38,7 +42,6 @@ $stmt = $con->prepare("INSERT INTO cs3620_project1.tvshows (`title`,
     `writerproducer`,
     `releasedate`, `user_id`) VALUES (?, ?, ?,?)");
 
-    session_start();
 
     $tt = $_POST["title"];
     $fln = $_POST["writerproducer"];
