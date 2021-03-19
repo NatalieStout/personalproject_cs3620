@@ -25,7 +25,7 @@
                         <div class="buttons">
                         <a href="profile.php" class="button">
                                 <span class="icon"><i class="fas fa-film"></i></span>
-                                <span>Movies</span>
+                                <span>Shows</span>
                             </a>
                             <a href="login.php" class="button is-danger">
                                 <span class="icon"><i class="fas fa-user"></i></span>
