@@ -97,11 +97,12 @@ class ShowDAO {
         $sql = "DELETE FROM cs3620_project1.tvshows WHERE user_id = " . $uid . " AND id = " . $sid . ";";
 
         if($con->query($sql) === TRUE) {
-            echo "user deleted";
+            echo "tv show deleted";
     }   else {
         echo "Error: " . $sql . "<br>" . $con->error;
     }
     $con->close();
+    header('Location: profile.php');
 }
 }
 ?>
