@@ -33,6 +33,7 @@
     
     require 'setenv.php';
     require './utilities/connection.php';
+    require './session/session.php';
 
 $stmt = $con->prepare("INSERT INTO cs3620_project1.tvshows (`title`,
     `writerproducer`,
