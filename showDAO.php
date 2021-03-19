@@ -102,7 +102,6 @@ class ShowDAO {
         echo "Error: " . $sql . "<br>" . $con->error;
     }
     $con->close();
-    header('Location: profile.php');
 }
 }
 ?>
