@@ -68,7 +68,7 @@ class ShowDAO {
         $sql = "SELECT id, title, writerproducer, releasedate FROM cs3620_project1.tvshows WHERE user_id = " . $user_id;
         $result = $con->query($sql);
 
-        $shows;
+        $shows = "";
         $index = 0;
 
         if($result->num_rows > 0) {
@@ -83,8 +83,7 @@ class ShowDAO {
                 $index = $index + 1;
             }
         }
-
-
+        
         $con->close();
 
         return $shows;
@@ -97,7 +96,7 @@ class ShowDAO {
         $sql = "DELETE FROM cs3620_project1.tvshows WHERE user_id = " . $uid . " AND id = " . $sid . ";";
 
         if($con->query($sql) === TRUE) {
-            echo "tv show deleted";
+            echo "Tv show deleted";
     }   else {
         echo "Error: " . $sql . "<br>" . $con->error;
     }

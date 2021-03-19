@@ -53,7 +53,7 @@ if(!isset($_SESSION['loggedin'])){
 
 
     <main role="main" class="container">
-        <h1>Natalie's Favorite Shows</h1>
+        <h1>My Favorite Shows</h1>
 
 
 <?php
