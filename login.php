@@ -8,7 +8,7 @@
                     <span class="icon is-large">
                 <i class="fas fa-home"></i>
               </span>
-                    <span>Home</span>
+                    <span>Home Page</span>
                 </a>
                 <div class="navbar-burger burger" data-target="navMenu">
                     <span></span>
