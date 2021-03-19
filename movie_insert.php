@@ -29,11 +29,10 @@
 
 <?php
 
-
+    session_start();
 
     require 'setenv.php';
     require './utilities/connection.php';
-    session_start();
 
 $stmt = $con->prepare("INSERT INTO cs3620_project1.tvshows (`title`,
     `writerproducer`,
