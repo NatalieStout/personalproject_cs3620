@@ -42,9 +42,9 @@ $stmt = $con->prepare("INSERT INTO cs3620_project1.tvshows (`title`,
     $tt = $_POST["title"];
     $fln = $_POST["writerproducer"];
     $rd = $_POST["releasedate"];
-    $user_id = $_SESSION["cs3620_project1.user_id"];
+    $uid = $_SESSION["user_id"];
 
-    $stmt->bind_param('sssi', $tt, $fln, $rd, $user_id);
+    $stmt->bind_param('sssi', $tt, $fln, $rd, $uid);
     $stmt->execute();
 
     $stmt->close();
