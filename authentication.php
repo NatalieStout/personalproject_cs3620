@@ -1,5 +1,5 @@
 <?php
-    
+    session_start();
     require 'setenv.php';
     require './utilities/connection.php';
 
@@ -27,7 +27,7 @@
                 $_SESSION['name'] = $_POST['username'];
                 $_SESSION['user_id'] = $id;
                 //echo "Welcome " . $_SESSION['name'];
-                header('Location: profile.php');
+                //header('Location: profile.php');
                 
                 
             }
