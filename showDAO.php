@@ -79,7 +79,7 @@ class ShowDAO {
                 $show->setTvshowTitle($row["title"]);
                 $show->setTvshowCreator($row["writerproducer"]);
                 $show->setTvshowDate($row["releasedate"]);
-                $shows[$index] = $show;
+                $shows[$index] = strval($show);
                 $index = $index + 1;
             }
         }
