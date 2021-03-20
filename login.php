@@ -67,11 +67,12 @@ require 'setenv.php';
     </span>
   </p>
 </div>
-<div class="buttons">
-  <a href="profile.php" class="button is-success">
-      <span class="icon"><i class="fas fa-user"></i></span>
-      <span>Login</span>
-  </a>
+<div class="field">
+  <p class="control">
+    <button class="button is-success">
+      Login
+    </button>
+  </p>
 </div>
 </form>
 

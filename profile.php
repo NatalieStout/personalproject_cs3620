@@ -1,13 +1,14 @@
 <?php
+session_start();
 require './utilities/connection.php';
 require './setenv.php';
 
 
 
-// if(!isset($_SESSION['loggedin'])){
-//     header('Location: login.php');
-//     exit;
-// } ?>
+if(!isset($_SESSION['loggedin'])){
+    header('Location: login.php');
+    exit;
+} ?>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
      <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>

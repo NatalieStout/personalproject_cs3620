@@ -2,7 +2,7 @@
     session_start();
     require 'setenv.php';
     require './utilities/connection.php';
-
+    
 
     if(!isset($_POST['username'], $_POST['password'])){
         exit('Please fill out both the username and password!');
@@ -27,7 +27,7 @@
                 $_SESSION['name'] = $_POST['username'];
                 $_SESSION['user_id'] = $id;
                 //echo "Welcome " . $_SESSION['name'];
-                //header('Location: profile.php');
+                header('Location: profile.php');
                 
                 
             }
