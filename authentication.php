@@ -2,7 +2,6 @@
     require 'setenv.php';
     require './utilities/connection.php';
 
-    session_start();
 
     if(!isset($_POST['username'], $_POST['password'])){
         exit('Please fill out both the username and password!');
