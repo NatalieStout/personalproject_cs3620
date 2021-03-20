@@ -1,7 +1,5 @@
 <?php
-
 require 'setenv.php';
-
 
 $SERVER_NAME = 'ntdbcs.mysql.database.azure.com';
 $DATABASE_USER = $_SESSION['SQLUSER'];
