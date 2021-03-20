@@ -71,11 +71,11 @@ if(!isset($_SESSION['loggedin'])){
     for($x = 0; $x < $arrlength; $x++) {
         echo '<div class="card">
                 <div class="card-content">
-                <header class="content">' . $shows[$x]->getTvshowTitle() . '</header>
-                    <div class="content">' . $shows[$x]->getTvshowCreator() . '</div>
-                    <div class="content">' . $shows[$x]->getTvshowDate() . '</div>
-                    <button onClick="window.location.href=\'edit.php?id=' . $shows[$x]->getTvshowId() . '\'" class="button is-info">Edit
-                    <button onClick="window.location.href=\'discard.php?id=' . $shows[$x]->getTvshowId() . '\'" class="button is-danger">Delete
+                <header class="content">' . $show[$x]->getTvshowTitle() . '</header>
+                    <div class="content">' . $show[$x]->getTvshowCreator() . '</div>
+                    <div class="content">' . $show[$x]->getTvshowDate() . '</div>
+                    <button onClick="window.location.href=\'edit.php?id=' . $show[$x]->getTvshowId() . '\'" class="button is-info">Edit
+                    <button onClick="window.location.href=\'discard.php?id=' . $show[$x]->getTvshowId() . '\'" class="button is-danger">Delete
                 </div>
             </div>';
     }
