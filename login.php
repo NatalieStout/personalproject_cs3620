@@ -69,7 +69,7 @@ require 'setenv.php';
 </div>
 <div class="field">
   <p class="control">
-    <button class="button is-success">
+    <button href="profile.php" class="button is-success">
       Login
     </button>
   </p>
