@@ -64,11 +64,11 @@ if(!isset($_SESSION['loggedin'])){
     require_once('./show/show.php');
 
 
-    $arrlength = count(array($shows));
+    
     $show = new show();
     $shows = $show->getMyTvshows($_SESSION["user_id"]);
 
-    
+    $arrlength = count(array($shows));
 
     for($x = 0; $x < $arrlength; $x++) {
         echo '<div class="card">
