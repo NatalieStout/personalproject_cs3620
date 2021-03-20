@@ -1,5 +1,5 @@
 <?php
-    require './session/session.php';
+    session_start();
     require 'setenv.php';
     require './utilities/connection.php';
 
