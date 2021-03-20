@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
      <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -33,10 +30,9 @@ session_start();
 
 <?php
 
-    
-
     require 'setenv.php';
     require './utilities/connection.php';
+    require './session/session.php';
 
 $stmt = $con->prepare("INSERT INTO cs3620_project1.tvshows (`title`,
     `writerproducer`,
