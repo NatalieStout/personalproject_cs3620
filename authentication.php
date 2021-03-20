@@ -1,4 +1,5 @@
 <?php
+    require './session/session.php';
     require 'setenv.php';
     require './utilities/connection.php';
 
