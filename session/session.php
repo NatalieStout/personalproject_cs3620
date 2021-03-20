@@ -1,5 +1,6 @@
 <?php
 require_once('./user/user.php');
+session_start();
 
 class session {
   // Methods
