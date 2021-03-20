@@ -36,7 +36,7 @@
 
 $stmt = $con->prepare("INSERT INTO cs3620_project1.tvshows (`title`,
     `writerproducer`,
-    `releasedate`, `user_id`) VALUES (?, ?, ?,?)");
+    `releasedate`, `user_id='$user_id'`) VALUES (?, ?, ?,?)");
 
 
     $tt = $_POST["title"];
