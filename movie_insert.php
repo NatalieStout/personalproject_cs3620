@@ -30,6 +30,7 @@
 
 <?php
 
+    session_start();
     require 'setenv.php';
     require './utilities/connection.php';
     require './session/session.php';
@@ -42,9 +43,9 @@ $stmt = $con->prepare("INSERT INTO cs3620_project1.tvshows (`title`,
     $tt = $_POST["title"];
     $fln = $_POST["writerproducer"];
     $rd = $_POST["releasedate"];
-    $uid = $_SESSION["user_id"];
+    $user_id = $_SESSION["user_id"];
 
-    $stmt->bind_param('sssi', $tt, $fln, $rd, $uid);
+    $stmt->bind_param('sssi', $tt, $fln, $rd, $user_id);
     $stmt->execute();
 
     $stmt->close();
